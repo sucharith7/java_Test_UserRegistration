@@ -26,4 +26,11 @@ public class ValidateUserTest {
         Assert.assertEquals(true, result);
 
     }
+    @Test
+    public void givenPassword_WhenMatched_ShouldReturnTrue() {
+        UserValidator userValidator = new UserValidator();
+        boolean result = userValidator.validatePassword("#qwerty9");
+        Assert.assertEquals(true, result);
+
+    }
 }
