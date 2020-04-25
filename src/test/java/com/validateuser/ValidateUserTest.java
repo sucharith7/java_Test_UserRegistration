@@ -33,4 +33,11 @@ public class ValidateUserTest {
         Assert.assertEquals(true, result);
 
     }
+    @Test
+    public void givenMobileNumber_WhenMatched_ShouldReturnTrue() {
+        UserValidator userValidator = new UserValidator();
+        boolean result = userValidator.validateMobileNumber("91 7836028824");
+        Assert.assertEquals(true, result);
+
+    }
 }
