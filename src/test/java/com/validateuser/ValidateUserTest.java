@@ -19,4 +19,11 @@ public class ValidateUserTest {
         Assert.assertEquals(true, result);
 
     }
+    @Test
+    public void givenMail_WhenMatched_ShouldReturnTrue() {
+        UserValidator userValidator = new UserValidator();
+        boolean result = userValidator.validateMail("abc@gmail.com");
+        Assert.assertEquals(true, result);
+
+    }
 }
